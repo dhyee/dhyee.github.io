@@ -1,0 +1,382 @@
+/********************************** Global ***********************************/
+
+body{
+    background-color: #fff;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    height: inherit;
+    width: inherit;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: #5dc8a0;
+}
+
+.clear{
+    clear: both;
+}
+
+h2{
+    font-family: 'Playball', serif;
+    font-size: 6em;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px #000;
+    letter-spacing: 5px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.colored{
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #a1e8ed;
+}
+
+/****************************** Header/Navigation ****************************/
+
+#header{
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+    height: 75px;
+}
+
+#headerbg{ 
+    position: fixed;
+    background-color: #343436;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+}
+
+#logo{
+    position: fixed;
+    height: inherit;
+    z-index: 2;
+}
+
+#homelogo{
+    height: inherit;
+}
+
+#logoimg{
+    height: inherit;
+    padding-left: 30px;
+}
+
+#nav{
+    right: 0;
+    vertical-align: middle;
+    padding-top: 22px;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 2;
+}
+
+.navWords{
+    color: #fff;
+    font-weight: bold;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 1.5em;
+}
+
+a.navWords:link{
+    color: #fff;
+}
+
+a.navWords:visited{
+    color: #fff;
+}
+
+a.navWords:hover{
+    text-decoration: underline;
+    color: #5dc8a0;
+}
+
+
+/****************************** Title Image ***********************************/
+
+#banner{
+    position: relative;
+    padding-top: 75px;
+    width: inherit;
+    height: 850px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.verticalCenterTitle{
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    top: 20%;
+}
+
+
+/********************************** About *********************************/
+
+#about{
+    height: inherit;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.abouttxt{
+    padding: 3% 0% 3% 0%;
+    max-width: 600px;
+    align-content: center;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0 auto;
+    color: white;
+}
+
+#whoAmI{
+    position: relative;
+    padding-top: 75px;
+    width: inherit;
+    height: 300px;
+    background-image: url(../img/whoami.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+
+/********************************** Portfolio *********************************/
+
+#portBanner{
+    position: relative;
+    padding-top: 75px;
+    width: inherit;
+    height: 300px;
+    background-image: url(../img/portbanner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    z-index: -2;
+}
+
+.doWork{
+    position: relative;
+    display: block;
+    min-height: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+doWork:hover{
+    opacity: 0.5; 
+}
+
+#preview{
+    position: relative;
+    width: 100%;
+    height: 950px;
+    background: #999;
+}
+
+.portfolio{
+    font-family: 'Playball', serif;
+    font-size: 5em;
+    color: white;
+    margin-left: 10%; 
+    height: inherit;
+    top: 50%; 
+    text-shadow: 3px 3px 5px #000;
+}
+
+.description{
+    position: relative;
+    font-size: 1.5em; 
+    color: #5dc8a0;
+    padding: 10px 0px 50px 5px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 10px 0px 10px #888888;
+    font-weight: bold;
+}
+
+.type{
+    background-color: #8eaac2;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 5px;
+    box-shadow: 10px 0px 10px #888;
+    color: white;
+}
+
+.blur img:hover{
+  opacity: 0.7; 
+}
+
+.portImg{
+    height: inherit;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#verticalCenterPreview{
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    top: 15%;
+}
+
+#verticalCenterPortfolio{
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    top: 25%;
+}
+
+.verticalCenterProject{
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    top: 100px;
+}
+
+#disappFinal{
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    background: #999;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+#disappInitial{
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    background: #999;
+    padding-bottom: 10%;
+}
+
+#logoBG{
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    background: #999;
+    padding-bottom: 10%;
+}
+
+.back{
+    position: fixed;
+    float: left;
+    padding-top: 5%;
+    text-align: right;
+}
+
+.next{
+    position: fixed;
+    float: right;
+    right: 0; 
+    padding-right: 10px; 
+    padding-top: 5%;
+}
+
+.projNav{
+    font-size: 1.5em;
+    margin: 0 auto;
+    color: white;
+}
+
+a.projNav:link{
+    color: #fff;
+}
+
+a.projNav:visited{
+    color: #fff;
+}
+
+a.projNav:hover{
+    text-decoration: underline;
+    color: #5dc8a0;
+}
+
+/****************************** Thank You Banner *******************************/
+
+#thanks{
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/thankyou.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/********************************** Footer ************************************/
+
+#footer{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background-color: #343436;
+    margin: 0 auto;
+    color: white; 
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#findme{
+    font-size: 2em;
+    padding-top: 55px;
+}
+
+.email{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+a.email:link{
+    color: #5dc8a0;
+}
+
+a.email:visited{
+    color: #5dc8a0;
+}
+
+a.email:hover{
+    color: white;
+}
+
+.social{
+    padding-top: 20px;
+}
+
+#fb{
+    padding-right: 15px;
+}
+
+#copyright{
+    padding-top: 0.8em;
+}
