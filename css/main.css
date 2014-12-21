@@ -310,7 +310,7 @@ a.projNav:visited{
 
 a.projNav:hover{
     text-decoration: underline;
-    color: #5dc8a0;
+    color: #8bfff6;
 }
 
 .button{
@@ -344,6 +344,11 @@ a.projNav:hover{
 
 #desc{
     padding-left: 25px;
+}
+
+.arrow{
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /****************************** Thank You Banner *******************************/
