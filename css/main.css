@@ -46,6 +46,10 @@ h2{
     color: #8bfff6;
 }
 
+li{
+    margin-left: 25px; 
+}
+
 /****************************** Header/Navigation ****************************/
 
 #header{
