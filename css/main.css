@@ -10,7 +10,7 @@ body{
 #container{
     height: 100%;
     width: 100%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -24,13 +24,21 @@ a{
 }
 
 h2{
-    font-family: 'Playball', serif;
-    font-size: 6em;
-    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    color: black;
     text-align: center;
-    text-shadow: 3px 3px 5px #000;
-    letter-spacing: 5px;
     margin: 0 auto;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.8em;
+    color:#ccc; /*a59999*/
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
 }
 
 .bold{
@@ -40,7 +48,7 @@ h2{
 }
 
 .colored{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Montserrat', serif;
     font-weight: bold;
     font-size: 1.2em;
     color: #8bfff6;
@@ -57,11 +65,13 @@ li{
     width: 100%;
     margin: 0px auto;
     height: 75px;
+    background-color: #343436;
 }
 
 #headerbg{ 
     position: fixed;
     background-color: #343436;
+    background: linear-gradient(#343436, rgba(255,0,0,0));
     width: inherit;
     height: inherit;
     z-index: 1;
@@ -197,13 +207,21 @@ button:hover{
 }
 
 .abouttxt{
-    padding: 3% 0% 3% 0%;
-    max-width: 600px;
+    align-content: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desctxt{
     align-content: center;
     text-align: left;
     font-size: 1em;
     margin: 0 auto;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #whoAmI{
@@ -254,7 +272,7 @@ doWork:hover{
 }
 
 .portfolio{
-    font-family: 'Playball', serif;
+    font-family: 'Oswald', serif;
     font-size: 5em;
     color: white;
     margin-left: 10%; 
@@ -294,6 +312,10 @@ doWork:hover{
     padding-bottom: 50px;
 }
 
+.portTitleImg{
+    width: 100%;
+}
+
 #verticalCenterPreview{
     margin-right: -15px;
     margin-left: -15px;
@@ -325,14 +347,12 @@ doWork:hover{
 }
 
 .back{
-    position: fixed;
     float: left;
     padding-top: 5%;
     text-align: right;
 }
 
 .next{
-    position: fixed;
     float: right;
     right: 0; 
     padding-right: 10px; 
@@ -381,6 +401,11 @@ a.projNav:hover{
 }
 			
 .button:active{
+}
+
+.current{
+    text-decoration: underline;
+    color: #8bfff6;
 }
 
 #uniDesc{
@@ -478,20 +503,25 @@ a.email:hover{
 /************************************* Grid & Bubba ***************************************/
 .grid {
     position: relative;
+    clear: both;
     margin: 0 auto;
     padding: 1em 0 1em;
-    max-width: 860px;
+    max-width: 1350px;
     list-style: none;
     text-align: center;
 }
+
 /* Common style */
 .grid figure {
     position: relative;
     float: left;
-/*    overflow: hidden;
-margin: 10px 1%;*/
-    width: 350px;
-    max-height: 234px;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 400px;
+    max-height: 300px;
+    width: 48%;
+    height: auto;
     background: #3085a3;
     text-align: center;
     cursor: pointer;
@@ -499,19 +529,18 @@ margin: 10px 1%;*/
 
 .grid figure img {
     position: relative;
-    /*display: block;*/
+    display: block;
     min-height: 100%;
-    min-width: 100%;
-    opacity: 0.8;
+    max-width: 100%;
+    opacity: 1;
 }
 
 .grid figure figcaption {
+    padding: 2em;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.25em;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -528,22 +557,25 @@ margin: 10px 1%;*/
     width: 100%;
     height: 100%;
 }
+
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
     z-index: 1000;
-    text-indent: 100%;
+    text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
     opacity: 0;
 }
 
 .grid figure h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 50;
+    word-spacing: -0.15em;
+    font-weight: 300;
 }
 
+.grid figure h2 span {
+    font-weight: 800;
+}
 
 .grid figure h2,
 .grid figure p {
@@ -554,18 +586,100 @@ margin: 10px 1%;*/
     letter-spacing: 1px;
     font-size: 68.5%;
 }
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 3.25em;
+    background: #fff;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+figure.effect-zoe h2 {
+    float: left;
+    color: black;
+    text-shadow: none;
+    letter-spacing: 2px;
+}
+
+figure.effect-zoe p.desc {
+    position: absolute;
+    bottom: 8em;
+    padding: 2em;
+    color: #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe h2 {
+    display: inline-block;
+    font-size: 1em;
+}
+
+figure.effect-zoe:hover p.desc {
+    opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
 figure.effect-bubba {
     background: $off-black;
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 
 figure.effect-bubba img {
     opacity: 1.0;
-    width: 350px;
+    width: 400px;
     height: auto;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
