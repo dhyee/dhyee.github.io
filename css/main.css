@@ -35,7 +35,7 @@ h2{
 h3{
     font-family: 'Open Sans', sans-serif;
     font-size:1.8em;
-    color:#ccc; /*a59999*/
+    color:#bbb; /*a59999*/
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
@@ -55,7 +55,8 @@ h3{
 }
 
 li{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 
@@ -223,9 +224,10 @@ button:hover{
 .desctxt{
     align-content: center;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 #whoAmI{
@@ -241,7 +243,7 @@ button:hover{
 .emph{
     font-weight: bold;
     color: #40adb4;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 
@@ -381,15 +383,20 @@ doWork:hover{
 
 .back{
     float: left;
-    padding-top: 5%;
-    text-align: right;
+    padding: 3%;
+    text-align: center;
+    width: 50%;
+    background-color: #bbb;
 }
 
 .next{
     float: right;
+    text-align: center;
     right: 0; 
     padding-right: 10px; 
-    padding-top: 5%;
+    padding: 3%;
+    width: 50%;
+    background-color: #bbb;
 }
 
 .projNav{
@@ -405,9 +412,12 @@ a.projNav:visited{
     color: #ccc;
 }
 
-a.projNav:hover{
-    text-decoration: underline;
-    color: #40adb4;
+.back:hover{
+    background-color: #40adb4;
+}
+
+.next:hover{
+    background-color: #40adb4;
 }
 
 .button{
@@ -450,8 +460,9 @@ a.projNav:hover{
 }
 
 .arrow{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    color: #fff;
 }
 
 /****************************** Thank You Banner *******************************/
