@@ -71,6 +71,7 @@ th{
     margin: 0px auto;
     height: 75px;
     background-color: #343436;
+    z-index: 5;
 }
 
 #headerbg{ 
@@ -194,7 +195,7 @@ button:hover{
 
 #about{
     height: inherit;
-    max-width: 60%;
+    max-width: 1100px;
     text-align: center;
     margin: 0 auto;
     background-color: white;
@@ -248,7 +249,7 @@ button:hover{
 /********************************** Portfolio *********************************/
 
 .portCont{
-    max-width: 60%;
+    max-width: 1100px;
     margin: auto;
     padding-top: 2%;
     background-color: white;
@@ -256,9 +257,9 @@ button:hover{
 }
 
 .portHomeCont{
-    max-width: 60%;
+    max-width: 1100px;
     margin: auto;
-    padding: 10% 0 10% 0;
+    padding: 5% 0 5% 0;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -321,6 +322,12 @@ doWork:hover{
 @media screen and (max-width: 700px) /* Mobile */ {
   .abtMe{
     max-width: 350px;
+  }
+  h2{
+    font-size: 2.5em;
+  }
+  h3{
+    font-size: 1.5em;
   }
 }
 
@@ -419,7 +426,7 @@ doWork:hover{
 }
 
 .projNav{
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 auto;
 }
 
@@ -575,7 +582,7 @@ a.email:hover{
 /* Common style */
 .grid figure {
     position: relative;
-    float: left;
+    display: inline-block;
     overflow: hidden;
     margin: 10px 1%;
     min-width: 320px;
