@@ -16,14 +16,15 @@
     <body>
     <div id = "container">
         <div id = "header">
-            <div id = "nav">
-                <a class = "navWords" href= "about.html">About</a>
-                <a class = "navWords" href= "portfolio.html">Portfolio</a>
-                <a class = "navWords" href= "https://drive.google.com/open?id=0B4oEPkvJgLpvdFRKcUtRUzFZMU0">Resume</a>
-            </div>
             <div id = "logo">
                 <a id = "homelogo" href= "index.html"><img id = "logoimg" src = "img/logoo.png" alt="x"></a>
             </div>
+            <ul class="topNav" id = "nav">
+                <li><a class = "navWords" href= "about.html">About</a></li>
+                <li><a class = "navWords" href= "portfolio.html">Portfolio</a></li>
+                <li><a class = "navWords" href= "https://drive.google.com/open?id=0B4oEPkvJgLpvdFRKcUtRUzFZMU0">Resume</a></li>
+                <li><a class = "hamburger" href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+            </ul>
             <div id = "headerbg"></div>
         </div>
 
@@ -125,6 +126,17 @@
     src="//c.statcounter.com/11199768/0/4d324ccf/1/"
     alt="website statistics"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "topNav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topNav";
+        }
+    }
+    </script>
 
     </body>
 </html>
