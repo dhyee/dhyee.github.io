@@ -53,8 +53,8 @@ h3{
 }
 
 li{
-    font-size: 1.1em;
-    line-height: 1.5;
+    font-size: 1.2em;
+    line-height: 1.61;
 }
 
 
@@ -236,6 +236,7 @@ button:hover{
     align-content: center;
     text-align: left;
     font-size: 1.2em;
+    line-height: 1.61;
     margin: 0 auto;
 }
 
@@ -250,10 +251,10 @@ button:hover{
 .desctxt{
     align-content: center;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 1.61;
 }
 
 #whoAmI{
