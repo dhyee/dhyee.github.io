@@ -456,6 +456,14 @@ doWork:hover{
     padding-bottom: 50px;
 }
 
+.portImgNike{
+    height: inherit;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border: 1px solid #bbb;
+}
+
 .portTitleImg{
     width: 100%;
     margin: 0;
@@ -552,7 +560,10 @@ a.projNav:visited{
     text-decoration: none;
 }
 			
-.button:active{
+a.button:visited{
+    color: #fff;
+    background: #3e7e89;
+    text-decoration: none;
 }
 
 .current{
