@@ -77,14 +77,14 @@ iframe{
 #header{
     position: fixed;
     width: 100%;
-    margin: 10px auto;
-    /*background-color: #343436;*/
+    /*margin: 10px auto;*/
+    background-color: #fff;
     z-index: 5;
 }
 
 #headerbg{ 
     position: fixed;
-    /*background-color: #343436;*/
+    /*background-color: #fff;*/
     /*background: linear-gradient(#343436, rgba(255,0,0,0));*/
     width: inherit;
     height: inherit;
