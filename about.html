@@ -3,8 +3,9 @@
     <head>
         <link type= "text/css" rel="stylesheet" href="css/main.css" />
         <link type= "text/css" rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="shortcut icon" href="img/favicon.PNG">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700" rel="stylesheet">
+        <link rel="shortcut icon" href="img/dy.PNG">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         
         <title>About | Donna Yee</title>
         <meta charset="utf-8">
@@ -17,40 +18,60 @@
     <div id = "container">
         <div id = "header">
             <div id = "logo">
-                <a id = "homelogo" href= "index.html"><img id = "logoimg" src = "img/logoo.png" alt="x"></a>
+                <a id = "homelogo" href= "index.html"><img id = "logoimg" src = "img/dy.png" alt="x"></a>
             </div>
             <ul class="topNav" id = "nav">
                 <li><a class = "navWords" href= "index.html">Work</a></li>
-                <li><a class = "navWords" href= "about.html"><span style="color: #40adb4; text-decoration: underline; font-weight: bold;">About</span></a></li>
-                <li><a class = "navWords" href= "https://drive.google.com/open?id=0B4oEPkvJgLpvTHp4UTdjdHhkSjA">Resume</a></li>
+                <li><a class = "navWords" href= "about.html"><span style="color: #1254cc; text-decoration: none;">About</span></a></li>
+                <li><a class = "navWords" href= "https://drive.google.com/file/d/1seW_CNICHTW_sR15cv1sedBkBOHG33sR/view?usp=sharing">Resume</a></li>
                 <li><a class = "hamburger" href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
             </ul>
             <div id = "headerbg"></div>
         </div>
         
         <div id = "preview">
-            <!--<div class="container-fluid">-->
+            <div class="container-fluid">
                     <div id="about">
-                        <span class = "bold">Hello, again!</span><br><br>
-                        <img src="img/about.png" alt="x"><br>
-                        <p class="abtMe">I'm a <span class="emph">UI/UX Designer</span> and graduate from the University of California San Diego majoring in Computer Science with a passion for seamless user experiences. I have a lot of practical experience in Human and Computer Interaction because that's what I'm excited to do. I'm a designer that can sympathize well with the programming side of things. 
-                            <br><br>
-                            I want to create things that people enjoy using by utilizing my design skills and programming knowledge. My goal is to bridge the gap between designers and programmers to create a more visually aesthetic but functionally efficient world. 
-                            <br><br>
-                            When I'm not designing or programming, I enjoy photography, art, eating new food, and traveling on my free time.
-                        </p>
+                        <div class="col-sm-6">
+                            <img class="portImg" src="img/Me.png" alt="x"><br>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class = "bold">Who I Am &mdash;</span>
+                            <p class="abtMe">A <b>UI/UX Designer</b> currently based in Los 
+                                Angeles designing web and mobile apps.
+                                <br><br>
+                                I graduated from the University of California San Diego with a degree in Computer Science specializing in HCI. Because of my background, I'm a designer that can not only sympathize well users, but with developers as well. I’m genuinely interested in how people interact with various products in their lives and what I can do to improve those experiences. 
+                                <br><br>
+                                When I'm not working, I like to take artsy fartsy photos, try out new food, draw ridiculous things in Photoshop, and travel the world on my free time.
+                            </p>
+                        </div><br><br>
+                        <div class="col-sm-12">
+                        <div class="col-sm-8">
+                            <span class = "bold">What People Think About Me &mdash;</span><br><br>
+                            <p class="desctxt">
+                                <span style="font-size: 1.5em; font-weight: bold">“</span>Donna was an invaluable asset to my UX/UI design team at UNIS LLC.  With a background in computer science and HCI, Donna is someone that can work easily with fellow designers as well as communicate her ideas effectively with developers. She thinks critically about the nuances of designing the complex logistic tools and systems that we work with everyday, constantly thinking of ways to improve. Her impeccable attention to detail translates to her design documentation and screen flow diagrams.  Not only is she a great team player, but she is also able to work independently and produce great digital experiences. Donna would be an exceptional asset to any product design team.<span style="font-size: 1.5em; font-weight: bold">”</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-4" style="height: 100%; padding: 15% 0 10% 10%;">
+                            <span style="font-weight: bold; font-size: 1.3em; margin: auto; ">
+                                Jackie Lee<br>Lead UI/UX Designer<br>UNIS LLC
+                            </span>
+                        </div>
                     </div>
-            <!--</div>-->
+                    </div>
+            </div>
+            <br><br><br><br>
         </div>
         
         <div id = "footer">
-            <p id = "findme">&darr; FIND ME &darr;</p>
+            <p id = "findme"> </p>
             <a class = "email" href="mailto:donnahyee@gmail.com?Subject=Hello%20Donna!">donnahyee@gmail.com</a>
             <p class = "social">
-                <a href= "http://www.facebook.com/shugawr"><img id = "fb" src="img/fb.png" alt = "x"></a>
-                <a href= "https://www.linkedin.com/pub/donna-yee/65/ab/494"><img src="img/linkedin.png" alt = "x"></a>
+                <a href= "http://www.facebook.com/shugawr"><i id="fb" class="fab fa-facebook-f"></i></a>
+                <a href= "http://www.instagram.com/dawnuhsaurus"><i id="insta" class="fab fa-instagram"></i></a>
+                <a href= "https://www.linkedin.com/pub/donna-yee/65/ab/494"><i id="linked" class="fab fa-linkedin-in"></i></a>
             </p>
-            <p id = "copyright">&copy; 2017 Donna Yee</p>
+            <p id = "copyright">&copy; 2018 Donna Yee</p>
         </div>
     </div>
 
