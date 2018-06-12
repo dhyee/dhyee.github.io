@@ -117,76 +117,79 @@
                              <center><span class = "quotes">We must implement features that force drivers to physically inspect their vehicle.</span></center><br><br>
                                 <span class = "emph">Researching the Guided Inspection</span><br><br>
                                 <p class="desctxt">
-                                    After gathering the requirements and understanding the problem, Jackie and I broke down this information by sketching out different designs to fulfill the business and user needs.<br><br>
+                                    To address the issue of non-compliant drivers, we needed to restructure the DVIR in a way that would guide them through the inspection with easily digestible steps. We decided a <b>guided inspection</b> would force the drivers to go through a step-by-step inspection of their truck. This would have the drivers take closer to the expected 15 minutes for the inspection.<br><br>
 
-                                    We each ideated 2-3 screen ideas for each major requirement and came back together to share them with each other. During this process we identified <b>reusable UI elements</b> and consolidated them into symbols in Sketch. This helped cut down on time wasted when translating our design from low to high fidelity and from high fidelity to development.
+                                    I did a competitive and comparative analysis on how other companies structure guided truck inspections. I cross referenced the parts listed on the paper DVIR with other guided inspections and categorized them into easily identifiable sections of the truck.
                                 </p><br>
                         </div>
                     </div>
-                    <img class="portTitleImg" src="img/ELDWhiteboard.jpg" alt="x"><br><br>
-                    <img class="portTitleImg" src="img/ELDLoFi.png" alt="x"><br><br>
+                    <img class="portTitleImg" src="img/DVIRParts.png" alt="x">
                     <div class="portDesc">
                         <div class="row">
-                                <span class = "emph">High Fidelity Wireframes</span><br><br>
+                            <p class="desctxt"><i>This is an excerpt of the document I created to organize the guided inspection. The full document can be found <a href="https://docs.google.com/spreadsheets/d/1WDqQPAefGHl_C45ru8n_KeZmqQotpIp6DRs992QTTTE/edit?usp=sharing">HERE</a>.</i></p><br>
+                            <p class="desctxt">
+                                I organized a meeting with the company mechanic as well as the company Safety and Compliance manager to verify the accuracy of my findings.
+                            </p><br><br>
+                                <span class = "emph">Rapid Prototyping</span><br><br>
                                 <p class="desctxt">
-                                    We picked the best ideas from each other’s sketches and combined them into a single design. One major requirement we ideated was the elements on the home screen. We made sure to keep all the important information on one screen so that it’s easily accessible to drivers. 
-                                    <img class="portImg" src="img/ELDHiFi.png" alt="x"><br>
-                                    Using my background in Computer Science, I created a <a target="_blank" href="https://docs.google.com/document/d/1u1sMVW7m9B2hIUOB7bga8KkumdMP_zdO_0c-nV6ZrGI/edit?usp=sharing">reference document</a> with all the possible edge cases we needed to design for, such as the error state, empty state, and filled state. 
+                                    Keeping the user and business requirements in mind and utilizing the research I had done on guided inspections, I ideated two guided truck inspection designs to present to the team. <br><br>
+                                    <b>Iteration 1</b>
+                                    <img class="portImg" src="img/DVIRIteration1.png" alt="x"><br>
+                                    <b>Iteration 2</b>
+                                     <img class="portImg" src="img/DVIRIteration2.png" alt="x"><br>
+                                     We decided on the second design since it forces the driver to go through each truck part one-by-one and gave more visual feedback on what parts were marked defective. 
                                 </p><br>
-                        </div>
-                    </div>
-                    <!--<div class="col-sm-6">
-                        <img style="width:100%;" src="img/ELDErrorStates.png" alt="x">
-                    </div>
-                    <div class="col-sm-6">
-                        <img style="width:100%;" src="img/ELDStates.png" alt="x">
-                    </div>-->
-                    <img style="float:left; width:50%; padding-bottom: 50px;" src="img/ELDErrorStates.png" alt="x">
-                    <img style="float:right; width:50%; padding-bottom: 50px;" src="img/ELDStates.png" alt="x">
-                    <div class="portDesc">
-                        <div class="row">
-                                <span class="emph">Internal User Testing</span><br><br>
+                                <span class="emph">Passing to Developers</span><br><br>
                                 <p class="desctxt">
-                                    We decided that it was best to test within our company first to discover the more obvious issues, fix those, and then test with drivers. Two major insights we found when testing internally:<br> 
-                                    <img class="portImg" src="img/ELDUserTest.png" alt="x"><br>
-                                    I then rectified these issues through several iterations.<br><br>
+                                    I regretfully didn’t have the time or resources to test my designs on drivers, as the audit deadline was approaching. I had to quickly pass my designs to the developers. <br><br>
+                                    As a former developer, I knew that uploading artboards to Zeplin wouldn’t be enough. So I made detailed flow diagrams on Sketch showing all possible user flows and how screens are linked for each major functionality. <br> 
                                 </p>
                         </div>
                     </div>
-                    <img style="float:left; width:50%; padding-bottom: 50px;" src="img/ELDIteration1.png" alt="x">
-                    <img style="float:right; width:50%; padding-bottom: 50px;" src="img/ELDIteration2.png" alt="x">
+                    <img class="portTitleImg" src="img/DVIRMechanicFlow.png" alt="x">
                     <div class="portDesc">
                         <div class="row">
-                                <span class="emph">External User Testing</span><br><br>
+                                <span class="emph">User Acceptance Testing</span><br><br>
                                 <p class="desctxt">
-                                    After refining our designs, we had actual company drivers test our prototype. I created an interactive Marvel prototype using our modified high fidelity mockups for user testing.
+                                    After the DVIR was fully developed, I led an User Acceptance Testing (UAT) session consisting of 5 new drivers and 2 current drivers. Since a group UAT presentation would give less valuable feedback than sitting down with each driver individually, I enlisted the help of 3 of my teammates to assist with user testing.<br><br>
+                                    I created a user testing guide to obtain consistent data for the features I want to test. The user testing guide compiled with all the answers we got from each driver can be found <a href="https://docs.google.com/document/d/1CDnRdSfIUaNcv5kt3ZIbJ379M9Jkxtf-u0UNdNDbPsk/edit?usp=sharing">HERE</a>.<br><br>
+                                    Overall, the app was well received! 4 out of 7 liked the guided inspection and found it as a helpful reminder for all the truck parts they need to check. The other 3 found it a bit extensive, but understood that the intention of the design was to enforce compliance.<br><br>
                                 </p>
-                                <iframe src="https://marvelapp.com/27cf8bj?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true" frameborder="0"></iframe>
-                                <p class="desctxt">
-                                    One major issue we discovered was that there were currently “too many pages to go through just to add a note”.  We realized that we had overlooked a major part of the paper log process: the ability to write a note about why they switched to a particular duty status. We had this feature, but it was a bit “hidden” because we didn’t realize how important and frequently used this feature would be.
+                                <center><span class = "quotes">“For someone who has no background in trucking, you did a really good job on making an easy to use inspection.”</span></center>
+                                <p class="desctxt" style="text-align: center;">
+                                    -Armando Rosete, <i>Company Driver</i>
                                 </p>
                                 <br><br>
-                                <span class = "emph">Iterate, Iterate, Iterate!</span><br><br>
-                        </div>
-                    </div>
-                    <img class="portTitleImg" src="img/ELDRevision.png" alt="x"><br><br>
-                    <div class="portDesc">
-                        <div class="row">
-                            <span class="emph">Latest Release</span><br><br>
                                 <p class="desctxt">
-                                    We touched up the final iteration based on user feedback, and were finally able to pass it over to the developers. Here is a preview of what the fully developed design looks like:<br><br> 
+                                    However, we did discover two major usability issues:
                                 </p>
-                            <iframe allowFullScreen frameborder="0" height="640" mozallowfullscreen src="https://player.vimeo.com/video/274015969" webkitAllowFullScreen width="640"></iframe>
+                                <img class="portImg" src="img/DVIRProblem1.png" alt="x"><br>
+                                <img class="portImg" src="img/DVIRProblem2.png" alt="x"><br>
+                                <br><br>
+                                <span class="emph">The Launch</span><br><br>
+                                <p class="desctxt">
+                                    We successfully launched the DVIR portion of the app on April 23, 2018. It was met with little to no complaints. It helped benefit the company in multiple ways:<br>
+                                    <ol>
+                                        <li>It gave better visibility for driver managers to keep track of non-compliant drivers</li>
+                                        <li>Mechanics can now see ahead of time when a truck needs maintenance</li>
+                                        <li>The company can confidently pass the DOT audit by showing all the electronic DVIR’s the drivers are submitting</li>
+                                    </ol> 
+                                </p>
                             <br><br>
                             <span class="emph">Learnings</span><br><br>
                             <p class="desctxt">
-                                This project taught me <b>A LOT</b> of things. 
+                                Despite the successful launch, there are a lot of things I would’ve done differently if given the time and resources. 
                             </p>
                             <ul>
-                                <li>The importance of gathering requirements before designing</li>
-                                <li>Version control is a very powerful and useful tool for both developers AND designers </li>
-                                <li>Having a style guide with reusable elements make design and hand off to developers much easier and faster</li>
-                                <li>As a designer, I can only speculate what a user would want. User testing gives important insight into what is actually useful for a user.</li>
+                                <li>I would’ve made sure to test and confirm my design decisions on drivers BEFORE development.</li>
+                                    <ul>
+                                        <li>Having my designs developed first and THEN user testing defied my ideal process. The time constraints really made it hard on me, as the only designer on the team to get proper testing done. </li>
+                                    </ul>
+                                <li>Similarly, I would’ve wanted to complete UAT much sooner</li>
+                                    <ul>
+                                        <li>Since we had to give time for development, UAT was held 3 days before the launch date. After UAT, there were some UI issues I wanted to fix that couldn’t be fixed in the first release of the app because of this time crunch</li>
+                                    </ul>
+                                <li>Having been on the developer’s side before, I sympathize with their struggles and understand there are often more important things to fix than UI. So I had to reluctantly forgive a lot of minor UI issues. </li>
                             </ul>
                         </div>
                             <br><br>
@@ -194,9 +197,9 @@
                     <div class="clear"><br></div>
             </div>
             <div class="row">
-                <a class="projNav" href="index.html" title="back to works">
+                <a class="projNav" href="unisdriveeld.html" title="previous project">
                     <div class = "back">
-                        <p class="arrow">&larr; Back Home</p>
+                        <p class="arrow">&larr; Previous: UNIS Drive - ELD</p>
                     </div>
                 </a>
                 <a class="projNav" href="nike.html" title="next project">
