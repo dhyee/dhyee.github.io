@@ -246,6 +246,11 @@ a.navWords:hover{
     font-size: 1.5em;
 }
 
+#homeTxt{
+    font-size: 1.4em; 
+    padding: 0 25% 0 25%;
+}
+
 @media screen and (max-width: 800px) /* Mobile */ {
   .projectImg{
     display: none;
@@ -258,6 +263,16 @@ a.navWords:hover{
   }
   .project{
     margin-bottom: 0em;
+  }
+  #homeTxt{
+    padding: 0 1em;
+  }
+  #logoimg{
+    padding-left: 1em;
+  }
+  #return-to-top{
+    bottom: 10px;
+    right: 10px;
   }
 }
 
