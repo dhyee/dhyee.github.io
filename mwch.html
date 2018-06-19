@@ -13,6 +13,9 @@
         <meta name="description" content="A Portfolio for Donna, by Donna">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+    </script>
     
     <body>
     <div id = "container">
@@ -104,7 +107,7 @@
                             <p class="desctxt">
                                 After working with a real client, it was interesting to see how different client needs are from the target user’s needs. It was difficult to decide whether we should listen to the client because they’d be the one paying for our services or listen to the end users since they’ll be the ones using and determining the success of the product. But as I worked through the project, I learned how to better prioritize these needs and made many comprimises with our client in order to make way for what the users wanted to see to have a balance. <br><br>In the end, the client really wanted to use the website we made for him, but it wasn't possible for him to switch from the provided UCSD domain they were already using. Although we weren't able to launch our website, it was a great learning experience that I'll take with me throughout my career. 
                             </p><br><br>
-                                <center><a class="button" href="http://noslp-mwch.herokuapp.com/" target="_blank" style="text-decoration:none; color:#fff">View Final Product &nbsp; &rarr;</a></center>
+                                <center><a class="buttonDark" href="http://noslp-mwch.herokuapp.com/" target="_blank">View Final Product &nbsp; &rarr;</a></center>
                             <br><br><br>
                         </div>
                         <div class="clear"><br></div>
@@ -123,6 +126,8 @@
                 </a>
             </div>
     </div>
+        
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
         
         <div id = "footer">
             <p id = "findme"> </p>
@@ -163,6 +168,19 @@
             x.className = "topNav";
         }
     }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
     </script>
 
     </body>

@@ -13,6 +13,9 @@
         <meta name="description" content="A Portfolio for Donna, by Donna">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+    </script>
     
     <body>
     <div id = "container">
@@ -80,7 +83,7 @@
                             <p class="desctxt">
                                 I learned alot about the importance of information architecture and how easily a website can violate the usability heuristics. With our redesign, we managed to reduce the number of clicks to get to the housing page from a confusing 5 clicks down to a more logical 3 clicks from the home page. Our path being Home -> Students -> Student Life -> Housing. When testing our design on multiple users telling them to try to find the Housing page on our website, 4/5 were able to find it easily within 3 clicks versus the 0/5 that were able to find it on the University of Leicester's website. 
                             </p><br><br>
-                            <center><a class="button" href="http://dhyee.github.io/Leicester-Redesign/index.html" target="_blank" style="text-decoration:none; color:#fff">View Final Product &nbsp; &rarr;</a></center>
+                            <center><a class="buttonDark" href="http://dhyee.github.io/Leicester-Redesign/index.html" target="_blank">View Final Product &nbsp; &rarr;</a></center>
                         </div>
                         <div class="clear"><br></div>
                     </div>
@@ -91,13 +94,15 @@
                         <p class="arrow">&larr; Previous: Muir Woods Coffee House</p>
                     </div>
                 </a>
-                <a class="projNav" href="uceap.html" title="next project">
+                <a class="projNav" href="index.html" title="next project">
                     <div class = "next">
-                        <p class="arrow">Next Project: UCEAP T-Shirt Design Contest &rarr;</p>
+                        <p class="arrow">Back Home &rarr;</p>
                     </div>
                 </a>
             </div>
         </div>
+        
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
         
         <div id = "footer">
             <p id = "findme"> </p>
@@ -138,6 +143,19 @@
             x.className = "topNav";
         }
     }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
     </script>
 
     </body>

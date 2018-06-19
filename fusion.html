@@ -13,6 +13,10 @@
         <meta name="description" content="A Portfolio for Donna, by Donna">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+    </script>
+
     <body>
     <div id = "container">
         <div id = "header">
@@ -76,6 +80,8 @@
             </div>
         </div>
         
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        
         <div id = "footer">
             <p id = "findme"> </p>
             <a class = "email" href="mailto:donnahyee@gmail.com?Subject=Hello%20Donna!">donnahyee@gmail.com</a>
@@ -115,6 +121,19 @@
             x.className = "topNav";
         }
     }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
     </script>
 
     </body>

@@ -13,6 +13,9 @@
         <meta name="description" content="A Portfolio for Donna, by Donna">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+    </script>
     
     <body>
     <div id = "container">
@@ -101,7 +104,7 @@
                             <p class="desctxt">
                                 It was a good experience going through a structured six stage design process including:  project proposal, task analysis, low-fidelity prototype, rapid prototype, heuristic evaluation and video prototype to modify and create our Nike+ 2.0 version of the application. We went through multiple iterations of evaluation, design, and implementation to build a more user-centric and intuitive design of the application.<br><br> I constantly kept the user’s wants and needs in mind while redesigning this application and I really enjoyed getting some of my foreign friends to help me with my user testing. It was interesting to see how different their thought process was from mine. Because there were many time constraints, I do regret not being able to deliver more quality prototypes. But in the end, we did succeed in making the application more usable as we saw from our user testing results.
                             </p><br><br>
-                            <center><a class="button" href="https://invis.io/S4AA0WCC5#/119326563_Home_Screen" target="_blank" style="text-decoration:none; color:#fff">View Invision Prototype &nbsp; &rarr;</a></center>
+                            <center><a class="buttonDark" href="https://invis.io/S4AA0WCC5#/119326563_Home_Screen" target="_blank">View Invision Prototype &nbsp; &rarr;</a></center>
                         </div>
                         <div class="clear"><br></div>
                     </div>
@@ -119,6 +122,8 @@
                 </a>
             </div>
         </div>
+        
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
         
         <div id = "footer">
             <p id = "findme"> </p>
@@ -159,6 +164,19 @@
             x.className = "topNav";
         }
     }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
     </script>
 
     </body>
