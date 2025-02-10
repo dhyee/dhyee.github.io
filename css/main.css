@@ -276,6 +276,11 @@ a.navWords:hover{
   }
 }
 
+#WWF{
+    background-color: #3186DF;
+    border-left: 15px solid #1E70C3;
+}
+
 #ELD{
     background-color: #618CDB;
     border-left: 15px solid #1254CC;
@@ -775,6 +780,19 @@ a.buttonLight:hover, a.buttonDark:hover{
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
+}
+
+.projectCard{
+    display: inline-flex;
+    /*height: 690px;*/
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /****************************** Thank You Banner *******************************/
